@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Validador COI vs SAE</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Validador de cuentas COI vs SAE</h1>
+    <p class="subtitle">Vista previa y actualización controlada de NUM_CTA</p>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Conexión COI</h2>
+        <label>Host</label>
+        <input id="coi-host" value="127.0.0.1">
+
+        <label>Puerto</label>
+        <input id="coi-port" value="3050">
+
+        <label>Base de datos</label>
+        <input id="coi-database" placeholder="C:\RUTA\COI.FDB">
+
+        <label>Usuario</label>
+        <input id="coi-user" value="SYSDBA">
+
+        <label>Password</label>
+        <input id="coi-password" type="password" value="masterkey">
+
+        <button onclick="testConexion('coi')">Probar conexión COI</button>
+        <div id="coi-status" class="status"></div>
+      </section>
+
+      <section class="card">
+        <h2>Conexión SAE</h2>
+        <label>Host</label>
+        <input id="sae-host" value="127.0.0.1">
+
+        <label>Puerto</label>
+        <input id="sae-port" value="3050">
+
+        <label>Base de datos</label>
+        <input id="sae-database" placeholder="C:\RUTA\SAE.FDB">
+
+        <label>Usuario</label>
+        <input id="sae-user" value="SYSDBA">
+
+        <label>Password</label>
+        <input id="sae-password" type="password" value="masterkey">
+
+        <button onclick="testConexion('sae')">Probar conexión SAE</button>
+        <div id="sae-status" class="status"></div>
+      </section>
+    </div>
+
+    <section class="card">
+      <h2>Vista previa</h2>
+      <label>Año tabla auxiliar</label>
+      <input id="anioTabla" value="25" maxlength="2">
+
+      <button onclick="generarPreview()">Generar vista previa</button>
+      <button onclick="actualizarSeleccionados()">Actualizar seleccionados</button>
+
+      <div id="preview-meta" class="meta"></div>
+    </section>
+
+    <section class="card">
+      <h2>Resultados</h2>
+      <div id="tabla-container" class="table-container"></div>
+      <pre id="raw-output" class="raw-output"></pre>
+    </section>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

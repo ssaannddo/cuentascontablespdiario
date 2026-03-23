@@ -1,0 +1,14 @@
+{
+  "name": "coi-sae-cuentas",
+  "version": "1.0.0",
+  "description": "Validador de cuentas contables COI vs SAE",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "node-firebird": "^2.0.2"
+  }
+}
