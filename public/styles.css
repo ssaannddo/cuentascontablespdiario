@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1450px;
   margin: 30px auto;
   padding: 0 16px;
 }
@@ -46,6 +46,7 @@ label {
 }
 
 input,
+select,
 button {
   width: 100%;
   padding: 10px 12px;
@@ -64,6 +65,16 @@ button {
 
 button:hover {
   background: #000000;
+}
+
+.secondary-btn {
+  margin-top: 8px;
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.secondary-btn:hover {
+  background: #d1d5db;
 }
 
 .status {

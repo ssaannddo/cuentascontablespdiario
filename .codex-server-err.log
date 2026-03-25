@@ -1,0 +1,14 @@
+Error en /api/coi-years: Error: Internal gds software consistency check (cannot start thread)
+    at doCallback (C:\Users\sophi\OneDrive\Escritorio\cuentascontablespdiario\node_modules\node-firebird\lib\callback.js:23:21)
+    at C:\Users\sophi\OneDrive\Escritorio\cuentascontablespdiario\node_modules\node-firebird\lib\wire\connection.js:177:25
+    at loop (C:\Users\sophi\OneDrive\Escritorio\cuentascontablespdiario\node_modules\node-firebird\lib\wire\connection.js:1568:29)
+    at parseOpResponse (C:\Users\sophi\OneDrive\Escritorio\cuentascontablespdiario\node_modules\node-firebird\lib\wire\connection.js:1886:29)
+    at decodeResponse (C:\Users\sophi\OneDrive\Escritorio\cuentascontablespdiario\node_modules\node-firebird\lib\wire\connection.js:1573:24)
+    at C:\Users\sophi\OneDrive\Escritorio\cuentascontablespdiario\node_modules\node-firebird\lib\wire\connection.js:154:17
+    at Socket.cb (C:\Users\sophi\OneDrive\Escritorio\cuentascontablespdiario\node_modules\node-firebird\lib\wire\socket.js:89:21)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+  gdscode: 335544333,
+  gdsparams: [ 'cannot start thread' ]
+}
